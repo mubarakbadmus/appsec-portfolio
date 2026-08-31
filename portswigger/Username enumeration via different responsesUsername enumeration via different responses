@@ -1,5 +1,8 @@
-## Username Enumeration via Different Responses
+>>>>>>>>>>>>>>>>>>>> Username Enumeration via Different Responses <<<<<<<<<<<<<<<<<<<<
 
-**Target:** PortSwigger Web Security Academy — Authentication Lab
-**Severity:** Low–Medium
-**Vulnerability Class:** Broken Authentication (OWASP A07:2021 — Identification and Authentication Failures)
+Target: PortSwigger Web Security Academy — Authentication Lab
+Severity: Low–Medium
+Vulnerability Class: Broken Authentication (OWASP A07:2025 — Authentication Failures)
+
+### Summary
+The application's login endpoint returns different responses depending on whether a submitted username exists in the system. This allows an attacker to enumerate valid usernames without needing a correct password, undermining the confidentiality of account information.
