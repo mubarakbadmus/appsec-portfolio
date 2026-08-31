@@ -1,1 +1,5 @@
+## Username Enumeration via Different Responses
 
+**Target:** PortSwigger Web Security Academy — Authentication Lab
+**Severity:** Low–Medium
+**Vulnerability Class:** Broken Authentication (OWASP A07:2021 — Identification and Authentication Failures)
