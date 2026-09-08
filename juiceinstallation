@@ -1,0 +1,21 @@
+steps:
+you need to install docker first with 
+# install docker
+C:\home\kingshark> sudo apt install docker.io
+# pull juice shop image from https://hub.docker.com/r/bkimminich/juice-shop 
+C:\home\kingshark> sudo docker pull bkimminich/juice-shop >> to install juice
+# run juice shop
+C:\home\kingshark> sudo docker run --security-opt apparmor=unconfined --rm -p 3000:3000 bkimminich/juice-shop
+observation:
+on https://hub.docker.com/r/bkimminich/juice-shop we can notice that we also run juice shop with "docker run --rm -p 3000:3000 bkimminich/juice-shop" but in mine i added "--security-opt apparmor=unconfined" so as to disable the default AppArmor confinement profile that Docker applies to containers. This was necessary because some of the Juice Shop challenges (and related exploitation steps) attempt operations such as certain file writes or syscalls  that are blocked by the default `docker-default` AppArmor profile. Running with `apparmor=unconfined` removes this restriction, allowing the container's processes the same level of freedom as an unconfined host process, so the intended vulnerable behavior of the application works correctly for testing/training purposes.
+If you want your progress/challenge state to survive restarts you can  also remove the " --rm"
+C:\home\kingshark>  sudo docker run --security-opt apparmor=unconfined -d -p 3000:3000 --name juice-shop bkimminich/juice-shop
+Then after a restart type this :
+
+C:\home\kingshark> sudo docker start juice-shop
+view image  of installation 
+
+open on your browser with : http://localhost:3000
+
+
+this is my ways of learning
