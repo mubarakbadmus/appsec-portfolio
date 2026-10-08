@@ -1,6 +1,6 @@
 # AppSec Write-ups
 
-Hands-on vulnerability write-ups documenting my transition from web2 bug bounty hunting into Application Security. Each write-up covers a real finding — vulnerability class, exploitation steps, impact, root cause, and remediation.
+Hands-on vulnerability write-ups documenting my transition from web2 bug bounty hunting into Application Security. Each write up covers a real finding vulnerability class, exploitation steps, impact, root cause, and remediation.
 
 ## About Me
 I'm transitioning from bug bounty hunting into a formal AppSec role. This repo tracks my hands-on practice across structured labs and CTF-style targets, with a focus on understanding *why* vulnerabilities exist, not just how to trigger them.
