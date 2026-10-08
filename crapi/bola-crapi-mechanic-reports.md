@@ -1,7 +1,9 @@
 # BOLA in crAPI Mechanic Reports
 
 **Target:** crAPI (OWASP Completely Ridiculous API), local Docker instance
+
 **Severity:** High. Any authenticated user can read other users' personal data, and the report IDs are sequential and guessable.
+
 **Vulnerability Class:** Broken Object Level Authorization (OWASP API Security Top 10, API1:2023), commonly called IDOR
 
 ## Summary
